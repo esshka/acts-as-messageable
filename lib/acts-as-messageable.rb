@@ -13,6 +13,14 @@ module ActsAsMessageable
       Rails3
     end
   end
+
+  # This is so I know which
+  # version of ActsAsMesseageable
+  # I am using
+  def self.identify!
+    'ActsAsMessageable_SFR'
+  end
+  
 end
 
 require 'acts-as-messageable/railtie'
