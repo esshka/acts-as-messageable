@@ -17,8 +17,8 @@ module ActsAsMessageable
   # This is so I know which
   # version of ActsAsMesseageable
   # I am using
-  def self.identify!
-    'ActsAsMessageable_SFR'
+  def self.by_me?
+    true
   end
   
 end
