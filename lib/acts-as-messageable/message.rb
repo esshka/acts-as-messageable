@@ -8,7 +8,7 @@ module ActsAsMessageable
     belongs_to :sent_messageable,     :polymorphic => true
 
     attr_accessor   :removed, :restored
-    attr_accessible :topic, :body, :recipient_delete
+    attr_accessible :topic, :body, :recipient_delete, :sender_delete
     cattr_accessor  :required
 
     ActsAsMessageable.rails_api.new(self).default_scope("created_at desc")
